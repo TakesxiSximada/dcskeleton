@@ -23,7 +23,6 @@ def read_readme(path):
 src = 'src'
 requirements_default = read_requirements('requirements.txt')
 
-
 setup(
     name='dcskeleton',
     version='0.1',
