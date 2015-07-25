@@ -9,7 +9,7 @@ from setuptools import (
 
 def read_requirements(path):
     if os.path.exists(path):
-        with open(path, 'rb') as fp:
+        with open(path, 'rt') as fp:
             return [line.strip() for line in fp]
     return []
 
@@ -22,7 +22,6 @@ def read_readme(path):
 
 src = 'src'
 requirements_default = read_requirements('requirements.txt')
-
 setup(
     name='dcskeleton',
     version='0.1',
